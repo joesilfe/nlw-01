@@ -1,0 +1,91 @@
+.dropzone {
+  height: 300px;
+  background: #E1FAEC;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  outline: 0;
+  
+  cursor: pointer;
+}
+
+.dropzone img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+
+.dropzone p {
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  border-radius: 10px;
+  border: 1px dashed #4ECB79;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.dropzone p span span {
+  font-weight: bold;
+}
+
+.dropzone p svg {
+  color: #4ECB79;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section button {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  background: var(--primary-color);
+  border-radius: 8px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  margin-top: 40px;
+}
+
+section button span {
+  display: block;
+  background: rgba(0, 0, 0, 0.08);
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+section button span svg {
+  color: #013500;
+  width: 20px;
+  height: 20px;
+}
+
+section button strong {
+  flex: 1;
+  text-align: center;
+  color: #013500;
+}
+
+section button:hover {
+  background: #2FB86E;
+}
